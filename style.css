@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.main{
+    max-width: 967px;
+    width: 95%;
+    min-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90%;
+}
+
+.main-section{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    height: 95%; 
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    'images'
+    'images'
+    'images'
+    'images'
+    'content'
+    ;
+}
+
+.main-section .image-section{
+    grid-area: images;
+    background: url(./images/image-qr-code.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    width: 80%;
+    margin: 15px auto;
+    height: 100%;
+}
+
+.main-section .content-section{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center ;
+    padding: 5px 15%;
+}
+
+
+.main-section .content-section p{
+    color:hsl(220, 15%, 55%) ;
+}
+
+@media screen and (max-width:800px){
+    .main-section{
+        width: 95%;
+        height: 95%;
+    }
+}
+
+
+
+
