@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100dvh;
     background: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
